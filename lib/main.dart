@@ -39,23 +39,27 @@ class MyCard extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
               Card(
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(25.0),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.phone,
-                      color: Colors.teal.shade900,
-                    ),
-                    title: Text(
-                      '+41 76 391 94 35',
-                      style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSans3',
-                          fontSize: 20.0),
-                    ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    '+41 76 391 94 35',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSans3',
+                        fontSize: 20.0),
                   ),
                 ),
               ),
@@ -63,24 +67,28 @@ class MyCard extends StatelessWidget {
                 color: Colors.white,
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                    padding: const EdgeInsets.all(25.0),
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.email,
-                        color: Colors.teal.shade900,
-                      ),
-                      title: Text(
-                        'ozgur.gumuslu@icloud.com',
-                        style: TextStyle(
-                          fontFamily: 'SourceSans3',
-                          fontSize: 18.0,
-                          color: Colors.teal.shade900,
-                        ),
-                      ),
-                    )),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    'ozgur.gumuslu@icloud.com',
+                    style: TextStyle(
+                      fontFamily: 'SourceSans3',
+                      fontSize: 18.0,
+                      color: Colors.teal.shade900,
+                    ),
+                  ),
+                ),
               ),
-              Image.asset('images/qr_code.jpg'),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                'images/qr_code.jpg',
+                width: 150.0,
+              ),
             ],
           ),
         ),
